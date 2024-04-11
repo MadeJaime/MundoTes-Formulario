@@ -1,19 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscripción a MundoTES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body class="container">
+    <header>
+      <h1>Inscripción a MundoTES</h1>
+      <p>
+        Con esta inscripción de MundoTES podrás ingresar a MundoRuki, la
+        plataforma de gestión estudiantil a nivel mundial de educación superior
+        y entrarás al sorteo de becas y premios preparados para ti.
+      </p>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="rut">R.U.T:</label>
+            <input type="text" id="rut" name="rut" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" required />
+          </div>
+          <div class="form-group">
+            <label for="comuna">En qué comuna vives?</label>
+            <select id="comuna" name="comuna" required>
+              <option selected disabled value="">- Elige -</option>
+              <option value="ALGARROBO">ALGARROBO</option>
+              <option value="ALHUÉ">ALHUÉ</option>
+              <option value="BUIN">BUIN</option>
+              <option value="CABILDO">CABILDO</option>
+              <option value="CALERA">CALERA</option>
+              <option value="CALERA DE TANGO">CALERA DE TANGO</option>
+              <option value="CALLE LARGA">CALLE LARGA</option>
+              <option value="CARTAGENA">CARTAGENA</option>
+              <option value="CASABLANCA">CASABLANCA</option>
+              <option value="CATEMU">CATEMU</option>
+              <option value="CERRILLOS">CERRILLOS</option>
+              <option value="CERRO NAVIA">CERRO NAVIA</option>
+              <option value="COLINA">COLINA</option>
+              <option value="CONCHALÍ">CONCHALÍ</option>
+              <option value="CONCÓN">CONCÓN</option>
+              <option value="CURACAVÍ">CURACAVÍ</option>
+              <option value="EL BOSQUE">EL BOSQUE</option>
+              <option value="EL MONTE">EL MONTE</option>
+              <option value="EL QUISCO">EL QUISCO</option>
+              <option value="EL TABO">EL TABO</option>
+              <option value="ESTACIÓN CENTRAL">ESTACIÓN CENTRAL</option>
+              <option value="HIJUELAS">HIJUELAS</option>
+              <option value="HUECHURABA">HUECHURABA</option>
+              <option value="INDEPENDENCIA">INDEPENDENCIA</option>
+              <option value="ISLA DE MAIPO">ISLA DE MAIPO</option>
+              <option value="ISLA DE PASCUA">ISLA DE PASCUA</option>
+              <option value="JUAN FERNÁNDEZ">JUAN FERNÁNDEZ</option>
+              <option value="LA CISTERNA">LA CISTERNA</option>
+              <option value="LA CRUZ">LA CRUZ</option>
+              <option value="LA GRANJA">LA GRANJA</option>
+              <option value="LA LIGUA">LA LIGUA</option>
+              <option value="LA REINA">LA REINA</option>
+              <option value="LAMPA">LAMPA</option>
+              <option value="LAS CONDES">LAS CONDES</option>
+              <option value="LIMACHE">LIMACHE</option>
+              <option value="LLAILLAY">LLAILLAY</option>
+              <option value="LO BARNECHEA">LO BARNECHEA</option>
+              <option value="LO ESPEJO">LO ESPEJO</option>
+              <option value="LO PRADO">LO PRADO</option>
+              <option value="LOS ANDES">LOS ANDES</option>
+              <option value="MACUL">MACUL</option>
+              <option value="MAIPÚ">MAIPÚ</option>
+              <option value="MARÍA PINTO">MARÍA PINTO</option>
+              <option value="MELIPILLA">MELIPILLA</option>
+              <option value="NOGALES">NOGALES</option>
+              <option value="ÑUÑOA">ÑUÑOA</option>
+              <option value="OLMUÉ">OLMUÉ</option>
+              <option value="PADRE HURTADO">PADRE HURTADO</option>
+              <option value="PAINE">PAINE</option>
+              <option value="PANQUEHUE">PANQUEHUE</option>
+              <option value="PAPUDO">PAPUDO</option>
+              <option value="PEDRO AGUIRRE CERDA">PEDRO AGUIRRE CERDA</option>
+              <option value="PEÑAFLOR">PEÑAFLOR</option>
+              <option value="PEÑALOLÉN">PEÑALOLÉN</option>
+              <option value="PETORCA">PETORCA</option>
+              <option value="PROVIDENCIA">PROVIDENCIA</option>
+              <option value="PUCHUNCAVÍ">PUCHUNCAVÍ</option>
+              <option value="PUDAHUEL">PUDAHUEL</option>
+              <option value="PUTAENDO">PUTAENDO</option>
+              <option value="QUILICURA">QUILICURA</option>
+              <option value="QUILLOTA">QUILLOTA</option>
+              <option value="QUILPUÉ">QUILPUÉ</option>
+              <option value="QUINTA NORMAL">QUINTA NORMAL</option>
+              <option value="QUINTERO">QUINTERO</option>
+              <option value="RECOLETA">RECOLETA</option>
+              <option value="RENCA">RENCA</option>
+              <option value="RINCONADA">RINCONADA</option>
+              <option value="SAN ANTONIO">SAN ANTONIO</option>
+              <option value="SAN BERNARDO">SAN BERNARDO</option>
+              <option value="SAN ESTEBAN">SAN ESTEBAN</option>
+              <option value="SAN FELIPE">SAN FELIPE</option>
+              <option value="SAN JOAQUÍN">SAN JOAQUÍN</option>
+              <option value="SAN MIGUEL">SAN MIGUEL</option>
+              <option value="SAN PEDRO">SAN PEDRO</option>
+              <option value="SAN RAMÓN">SAN RAMÓN</option>
+              <option value="SANTA MARÍA">SANTA MARÍA</option>
+              <option value="SANTIAGO">SANTIAGO</option>
+              <option value="SANTO DOMINGO">SANTO DOMINGO</option>
+              <option value="TALAGANTE">TALAGANTE</option>
+              <option value="TILTIL">TILTIL</option>
+              <option value="VALPARAÍSO">VALPARAÍSO</option>
+              <option value="VILLA ALEMANA">VILLA ALEMANA</option>
+              <option value="VIÑA DEL MAR">VIÑA DEL MAR</option>
+              <option value="VITACURA">VITACURA</option>
+              <option value="ZAPALLAR">ZAPALLAR</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input
+              type="date"
+              id="fecha_nacimiento"
+              name="fecha_nacimiento"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="donde_estudias">Donde estudias y en qué comuna?</label>
+            <input
+              type="text"
+              id="donde_estudias"
+              name="donde_estudias"
+              required
+            />
+          </div>
+        </fieldset>
 
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <script src="assets/js/script.js"></script>
-</body>
+        <fieldset>
+          <fieldset>
+            <legend>Nivel de Estudios:</legend>
+            <label>
+              <input type="checkbox" name="basica_completa" />
+              Basica Completa
+            </label>
+            <label>
+              <input type="checkbox" name="media_cursando" />
+              Media (cursando)
+            </label>
+            <label>
+              <input type="checkbox" name="media_completa" />
+              Media Completa
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>En curso estas?</legend>
+            <label>
+              <input type="checkbox" name="" />
+              1ero Medio
+            </label>
+            <label>
+              <input type="checkbox" name="" />
+              2do Medio
+            </label>
+            <label>
+              <input type="checkbox" name="" />
+              3ro Medio
+            </label>
+            <label>
+              <input type="checkbox" name="" />
+              4to medio
+            </label>
+          </fieldset>
+          <div class="form-group">
+            <label for="anio_egreso">Si egresaste, en qué año fue?</label>
+            <input type="number" id="anio_egreso" name="anio_egreso" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Opciones de Educación Superior</legend>
+          <div class="form-group">
+            <label for="carreras"
+              >Ingresa 3 carreras de tu preferencia para dar tus próximos pasos
+              en la educación superior:</label
+            >
+            <textarea
+              id="carreras"
+              name="carreras"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="financiamiento"
+              >Cómo financiarías tu educación superior?</label
+            >
+            <select id="financiamiento" name="financiamiento" required>
+              <option selected disabled value="">- Elige -</option>
+              <option value="cae">CAE</option>
+              <option value="gratuidad">Gratuidad</option>
+              <option value="becas">Becas</option>
+              <option value="financiamiento_propio">
+                Financiamiento propio
+              </option>
+              <option value="no_lo_sabes">No lo sé</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="donde_estudiar">Dónde te gustaría estudiar?</label>
+            <select id="donde_estudiar" name="donde_estudiar" required>
+              <option selected disabled value="">- Elige -</option>
+              <option value="universidad">Universidad</option>
+              <option value="instituto_profesional">
+                Instituto Profesional
+              </option>
+              <option value="cft">CFT</option>
+              <option value="escuelas_ffaa">Escuelas de las FFAA</option>
+            </select>
+          </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <p>© 2024 Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>
